@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <a href = "index.html" class="logo">
+            <img src="logo.png" alt="Notes App Logo" class="logo">
+        </a>
+
+        <!-- Creating Navigation Menu-->
+        <nav id="nav">
+            <a id="navhome" href="index.html">Home</a>
+            <a id="navnotes" href="notes.html">Notes</a>
+            <a id="navarchive" href="archive.html">Archive</a>
+            <a id="navcalendar" href="calendar.html">Calendar</a>
+            <a id="navsettings" href="settings.html">Settings</a>
+        </nav>
+    </header>
+
+    <main id="maincontent">
+        <section id="settingssection">
+            <h2 id="settingstitle"> Settings </h2>
+            <p id="settingstext"><u>
+                    Customize your Notes App experience.
+                </u></p>
+
+            <!--For selecting the font family-->
+            <div class="settingsitem">
+                <label for="fontfamily"> Choose the Apps Font Family : </label>
+                <select id="fontfamily">
+                    <option value="Arial, sans-serif"> Arial </option>
+                    <option value="'Courier New', monospace"> Courier New </option>
+                    <option value="'Times New Roman', serif"> Times New Roman </option>
+                    <option value="'Verdana', sans-serif"> Verdana </option>
+                    <option value="'Georgia', serif"> Georgia </option>
+                </select>
+                <button id="applyfont"> Apply Font </button>
+            </div>
+
+            <!--For dictionary API-->
+            <div class="settingsitem">
+                <label for="dictionaryapi"> Dictionary Lookup : </label>
+                <input type="text" id="dictionaryapi" placeholder="Enter a word..">
+                <button id="search"> Search </button>
+                <p id="dictionaryapiresult"></p>
+            </div>
+
+            <!--For exporting notes-->
+            <div class="settingsitem">
+                <p><strong>Export All Notes:</strong></p>
+                <button id="exportnotes"> Export </button>
+            </div>
+
+            <!--For App version-->
+            <div class="settingsitem">
+                <p><strong> App Version: </strong> 1.0.0</p>
+
+                <p><strong> Contact :</strong> <a href=mailto:moniralam294@gmail.com target="_blank"> Monirul Alam </a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer id="footer">
+        <p id="footerwrite">&copy; 2026 Notes App | All Rights Reserved | Monirul Alam </p>
+        <p>
+            <a href="https://forms.gle/QarDpBXrRNqjcXvB8" id="feedbacklink" target="_blank"> Have a Feedback? Click
+                here! </a>
+        </p>
+    </footer>
+    <script src="fontloader.js"></script>
+    <script src="settings.js"></script>
+</body>
+
+</html>

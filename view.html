@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <a href = "index.html" class="logo">
+            <img src="logo.png" alt="Notes App Logo" class="logo">
+        </a>
+
+        <!-- Creating Navigation Menu-->
+        <nav id="nav">
+            <a id="navhome" href="index.html">Home</a>
+            <a id="navnotes" href="notes.html">Notes</a>
+            <a id="navarchive" href="archive.html">Archive</a>
+            <a id="navcalendar" href="calendar.html">Calendar</a>
+            <a id="navsettings" href="settings.html">Settings</a>
+        </nav>
+    </header>
+
+    <!--Main Content-->
+    <main id="maincontent0">
+        <div class="viewnotecontainer">
+            <h2 id="note-title"></h2>
+            <small id="note-date"></small>
+            <p id="note-content"></p>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer id="footer">
+        <p id="footerwrite">&copy; 2026 Notes App | All Rights Reserved | Monirul Alam </p>
+        <p>
+            <a href="https://forms.gle/QarDpBXrRNqjcXvB8" id="feedbacklink" target="_blank"> Have a Feedback? Click
+                here! </a>
+        </p>
+    </footer>
+    <script src="fontloader.js"></script>
+    <script src="view.js"></script>
+</body>
+
+</html>

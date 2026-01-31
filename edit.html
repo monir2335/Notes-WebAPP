@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <a href = "index.html" class="logo">
+            <img src="logo.png" alt="Notes App Logo" class="logo">
+        </a>
+
+        <!-- Creating Navigation Menu-->
+        <nav id="nav">
+            <a id="navhome" href="index.html">Home</a>
+            <a id="navnotes" href="notes.html">Notes</a>
+            <a id="navarchive" href="archive.html">Archive</a>
+            <a id="navcalendar" href="calendar.html">Calendar</a>
+            <a id="navsettings" href="settings.html">Settings</a>
+        </nav>
+    </header>
+
+    <!--Main Content-->
+    <main id="maincontent">
+        <section id="editnotessection">
+            <h2 id="editnotetitle"> Edit Note </h2>
+
+            <label for="inputtitle"> Title </label>
+            <input id="inputtitle" type="text" placeholder="Enter Note Title">
+
+            <label id="contentlabel" for="inputcontent"> Content </label>
+            <textarea id="inputcontent" placeholder="Edit your note here..."></textarea>
+
+            <div id="createaction">
+                <button id="updatenote"> Update Note </button>
+                <button class="deletenote" id="deletenote"> Delete Note </button>
+                <a id="cancel" href="notes.html"> Cancel </a>
+            </div>
+    </main>
+
+    <!--Footer-->
+    <footer id="footer">
+        <p id="footerwrite">&copy; 2026 Notes App | All Rights Reserved | Monirul Alam </p>
+        <p>
+            <a href="https://forms.gle/QarDpBXrRNqjcXvB8" id="feedbacklink" target="_blank"> Have a Feedback? Click
+                here! </a>
+        </p>
+    </footer>
+    <script src="fontloader.js"></script>
+    <script src="edit.js"></script>
+</body>
+
+</html>
