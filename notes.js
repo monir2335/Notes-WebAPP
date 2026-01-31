@@ -53,7 +53,7 @@ function displaynotes() {
 
     const notes = JSON.parse(localStorage.getItem("notes")) || [];
 
-    notes.forEach(note => {
+    notes.reverse().forEach(note => {
         if (note.archived) return;
         const notediv = document.createElement("div");
         notediv.className = "notescard";
