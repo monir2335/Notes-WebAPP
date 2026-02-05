@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // target date (from input) as a normalized Date object
         const targetDate = new Date(selectdate);
         if (isNaN(targetDate)) {
             alert("Invalid date selected.");
@@ -23,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const notes = JSON.parse(localStorage.getItem("notes")) || [];
 
-        // helper: try to parse various human-readable date strings
         function parseFlexibleDate(d) {
             if (!d) return null;
             // try native parse first
@@ -70,7 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const card = document.createElement("div");
             card.classList.add("notescard");
 
-            // use global escapeHtml if available, otherwise fallback
             const esc = (typeof window !== 'undefined' && window.escapeHtml) ? window.escapeHtml : function(s){
                 if (!s && s !== 0) return '';
                 return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
